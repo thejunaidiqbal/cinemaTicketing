@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs"  %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form2" runat="server">
+    <div>
+        <div id="main">
+        <div id="header">
+
+            <div id="logo">
+                <div class="effect">
+                <h1><a href="AdminHome.aspx">moviehouse</a></h1>
+                    </div>
+
+            <h2>    
+           <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+                &nbsp; &nbsp;
+                <asp:LinkButton ID="LinkButton1" runat="server" onclick="SignOut">sign out</asp:LinkButton>
+            </h2>
+                
+
+            </div>
+
+            <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+            <a href="AdminHome.aspx">Home</a>
+            <a href="AdminAccount.aspx">Account</a>
+
+                              <div class="dropdown">
+  <a class="dropdown-btn">add/remove
+    <i class="fa fa-caret-down"></i>
+  </a>
+  <div class="dropdown-content">
+           <a href="AddMovie.aspx">movie</a>
+             <a href="AddRemoveCinema.aspx">cinemas</a>
+             <a href="AddRemoveFood.aspx">FoodItems</a>
+             <a href="AddShow.aspx">Shows</a>
+             <a href="AddRemoveDiscounts.aspx">discounts</a>
+           
+  
+  </div>
+</div>
+         <br />
+                 <a href="CinemaChanges.aspx">make cinema changes</a>
+                 <a href="Lists.aspx">Lists</a>
+            <a href="AdminContact.aspx">Contact</a>
+
+  </div>
+</div>
+
+     <script>
+         function openNav() {
+             document.getElementById("myNav").style.width = "100%";
+         }
+
+         function closeNav() {
+             document.getElementById("myNav").style.width = "0%";
+         }
+     </script>
+
+
+        </div>
+        <hr />
+            
+        <div id="page">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        </div>
+        <!--Footer></!-->
+        </div>
+    
+        <div id="footer">
+            <p>
+                (c) 2018 moviehouse.com. All rights reserved. Design by Mehar Fatima, Seerat Kamal, Saira Saddique and Muntaha Zaigham</p>
+        </div>
+       
+    </form>
+</body>
+</html>

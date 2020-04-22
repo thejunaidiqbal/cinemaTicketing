@@ -1,0 +1,409 @@
+﻿body {
+     background: url(../picst/Cinema2.jpg) no-repeat center center fixed; 
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+     font-size: 17px;
+     color:#ffffff;
+     font-weight:bold;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-transform: lowercase;
+	color: #ffffff;
+}
+
+h1 {
+	letter-spacing: -1px;
+	font-size: 44px;
+}
+
+h2 {
+    font-weight: bold;
+    text-align: center;
+	font-size: 32px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+p, ul, ol {
+	margin: 0 0 1.5em 0;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+p {
+    font-weight: bold;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.buttonCSS 
+     {
+
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f));
+	background:-moz-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+	background:-webkit-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+	background:-o-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+	background:-ms-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+	background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f',GradientType=0);
+	background-color:#f24537;
+	-moz-border-radius:13px;
+	-webkit-border-radius:13px;
+	border-radius:13px;
+	border:1px solid #CF110A;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+      
+     }
+
+
+.buttonCSS:hover {
+  color: #FFFFFF !important;
+  background: #CF110A;
+  background: linear-gradient(top,  #CF493A,  #EE341F);
+  background: -ms-linear-gradient(top,  #CF493A,  #EE341F);
+  background: -webkit-gradient(linear, left top, left bottom, from(#CF493A), to(#EE341F));
+  background: -moz-linear-gradient(top,  #CF493A,  #EE341F);
+}
+
+
+
+
+.tb {
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border: 2px solid #FFFFFF;
+}
+blockquote {
+	font-style: italic;
+}
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a{
+    padding: 8px;
+    text-align:center;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: lowercase;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.dropbtn {
+background-color:transparent;
+    color: black;
+   
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    border-radius: 8px;
+    padding:1px 1px 1px 1px;
+    position: relative;
+    background-color: #f1f1f1;
+    min-width: 160px;
+   
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color:#ddd;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #FF3E30;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+ul {
+}
+
+ol {
+}
+
+a {
+	color: #38B5F1;
+}
+
+a:hover {
+            color: #83B3CE;
+	text-decoration: none;
+}
+
+small {
+}
+
+hr {
+	display: none;
+}
+
+
+
+/* Header */
+
+#header {
+	width: 954px;
+	height: 183px;
+	margin: 0 auto;
+	
+}
+
+/* Logo */
+
+#logo {
+	/*float: left;*/
+}
+
+#logo h1, #logo h2 {
+	/*float: left;*/
+	text-transform: lowercase;
+	color: #ffffff;
+}
+
+#logo h1 {
+    float: left;
+	padding: 115px 0 0 50px;
+	font-weight: bold;
+}
+
+#logo h2 {
+  
+    float: right;
+	padding:115px 0 0 50px;
+    color:#ffffff;
+	font-weight: bold;
+}
+
+#logo a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* Menu */
+
+#menu {
+	float: right;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 140px 20px 0 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	padding: 0 28px 0 0;
+	text-transform: lowercase;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/* Page */
+
+#page {
+	width: 954px;
+	margin: 0 auto;
+
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 274px;
+	
+}
+
+#sidebar ul {
+	width: 206px;
+	margin: 0;
+	padding: 0 0 0 30px;
+	list-style: none;
+}
+
+
+#sidebar li li.first {
+	padding-top: 0;
+	background: none;
+}
+
+
+
+/* Footer */
+
+#footer {
+    clear: both;
+	width: 900px;
+	padding: 30px 0;
+    margin: 0 auto;
+}
+
+#footer p {
+	text-align: center;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+#footer a {
+	color: #83B3CE;
+}
+
+
+ .GridPosition
+    {
+    	/*position:relative;
+    	left:243px;
+    	top:-17px;
+    	height:204px;
+    	width:486px;
+      align-items: center;
+  justify-content: center;*/
+
+    }
+
+
+ 
+    .center {
+    text-align: center;
+   
+}
+
+    .effect {
+ 
+}
+
+.effect:hover {
+    animation: shake 0.5s; 
+    animation-iteration-count: infinite; 
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #784848; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+}
+
+

@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs"  %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   
+     <title> </title>
+   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+    </asp:ContentPlaceHolder>
+   
+    <link rel="stylesheet" href="MyCssFile.css" type="text/css" charset="utf-8" />
+</head>
+     <%--<h1><img src="images/logo.jpg" title="Movies" alt="Moviess" /></h1>--%>
+<body>
+        
+    <form id="form2" runat="server">
+    <div>
+       <div id="main">
+        <div id="header">
+
+            <div id="logo">
+                <div class="effect">
+                <h1><a href="Home.aspx">moviehouse</a></h1>
+                    </div>
+            </div>
+
+            
+            <div id="menu">
+                <ul >
+                    <li><a href="Home.aspx" accesskey="1" title="">home</a></li>
+                    <li><a href="SignIn.aspx" accesskey="2" title="">sign in</a></li>
+                    <li><a href="SignUp.aspx" accesskey="3" title="">sign up</a></li>
+                    <li><a href="Contacts.aspx" accesskey="4" title="">contact</a></li>
+                </ul>
+            
+                </div>
+
+        </div>
+        <hr />
+            
+        <div id="page">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        </div>
+        <!--Footer></!-->
+        <div id="footer">
+            <p>
+                (c) 2018 moviehouse.com. All rights reserved. Design by Mehar Fatima, Seerat Kamal, Saira Saddique and Muntaha Zaigham</p>
+        </div>
+        </div>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="FinalProject.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link rel="stylesheet" href="MyCssFile.css" type="text/css" charset="utf-8" />
+
+</head>
+<body>
+    <form id="form2" runat="server">
+      <div>
+       <div id="main">
+        <div id="header">
+
+            <div id="logo">
+                <div class="effect">
+                <h1><a href="UserHome.aspx">moviehouse</a></h1>
+                    </div>
+
+            <h2>    
+           <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+                &nbsp; &nbsp;
+                <asp:LinkButton ID="LinkButton1" runat="server" onclick="SignOut">sign out</asp:LinkButton>
+            </h2>
+                
+
+            </div>
+
+            <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+  <a href="UserHome.aspx">Home</a>
+            <a href="UserAccount.aspx">Account</a>
+            
+   
+
+                <div class="dropdown">
+  <a class="dropdown-btn">movies 
+    <i class="fa fa-caret-down"></i>
+  </a>
+  <div class="dropdown-content">
+    <a href="MoviesList.aspx">current movies</a>
+     <a href="MovieShowtimes.aspx">Movie Time</a>
+      <a href="WatchHistory.aspx">Watch History</a>
+  
+  </div>
+</div>
+                <br />
+              
+                <div class="dropdown">
+  <a class="dropdown-btn">cinemas
+    <i class="fa fa-caret-down"></i>
+  </a>
+  <div class="dropdown-content">
+   <a href="Cinemas.aspx">view cinemas</a>
+   <a href="CinemasOfferingDiscounts.aspx">Discount Offers</a>
+   <a href="CinemasOfferingFood.aspx">Food Services</a>
+   <a href="Rating.aspx">Rating</a>
+    
+  </div>
+</div>
+            <a href="UserContact.aspx">Contact</a>
+               
+                
+             
+
+  </div>
+</div>
+
+            <%--<h2>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+                </h2>--%>
+
+     <script>
+
+
+         function openNav() {
+             document.getElementById("myNav").style.width = "100%";
+         }
+
+         function closeNav() {
+             document.getElementById("myNav").style.width = "0%";
+         }
+     </script>
+
+            
+
+            </script>
+        </div>
+        <hr />
+            
+        <div id="page">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        </div>
+        <!--Footer></!-->
+        </div>
+    
+        <div id="footer">
+            <p>
+                (c) 2018 moviehouse.com. All rights reserved. Design by Mehar Fatima, Seerat Kamal, Saira Saddique and Muntaha Zaigham</p>
+        </div>
+        </div>
+        </form>
+        </body>
+</html>
+
+
+
+           
