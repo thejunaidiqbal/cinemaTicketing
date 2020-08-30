@@ -1,4 +1,4 @@
-# Cinema-Ticketing:-
+# Cinema-Ticketing:
 Here is my semester final project. In this cinema ticketing system on ASP.NET having modules like:-
 * Add/Remove Cinemas
 * Add/Remove Movies
